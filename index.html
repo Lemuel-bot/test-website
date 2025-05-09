@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeScript Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Optional: Custom CSS for the simulation area, if needed */
+        #simulation-container {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-indigo-500 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-semibold text-center">SafeScript Simulator</h1>
+            <p class="text-lg text-center mt-2">A Virtual Training Environment for Pharmacy Professionals</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Problem Addressed</h2>
+            <p class="text-gray-700">
+                Pharmacy students and professionals need safe, risk-free environments to practice and hone their skills in dispensing,
+                patient counseling, and error detection. Traditional training methods often lack the opportunity for hands-on experience
+                with the complexities and pressures of real-world scenarios, potentially leading to medication errors and compromised
+                patient safety.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Solution: SafeScript Simulator</h2>
+            <p class="text-gray-700 mb-4">
+                SafeScript Simulator is a web-based platform providing interactive, scenario-based simulations designed to enhance
+                the skills and competencies of pharmacy professionals.  It offers a comprehensive training experience, focusing on key areas:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li><strong>Dispensing Error Detection:</strong> Students learn to identify errors such as look-alike/sound-alike drugs, incorrect dosages, and allergy flags.</li>
+                <li><strong>Patient Counseling Challenges:</strong> Simulations present complex patient scenarios, including low health literacy, polypharmacy, and patient hesitancy, requiring students to develop effective communication strategies.</li>
+                <li><strong>Intervention Practice:</strong>  Students practice responding to unsafe prescriptions, such as those with major drug interactions or contraindications, and learn to communicate their concerns to simulated prescribers.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Key Features and Benefits</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li><strong>Interactive and Engaging Simulations:</strong>  Realistic scenarios provide hands-on learning.</li>
+                <li><strong>Safe and Risk-Free Environment:</strong>  Students can practice without fear of harming real patients.</li>
+                <li><strong>Scalable and Accessible:</strong> Web-based platform allows for wide accessibility and easy updates.</li>
+                <li><strong>Personalized Learning:</strong> (Future) AI-driven adaptive learning adjusts to individual student needs.</li>
+                <li><strong>Improved Patient Safety:</strong>  Contributes to better-trained pharmacists and reduced medication errors.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Prototype Simulation</h2>
+            <div id="simulation-container" class="border rounded-md p-4">
+                <p class="text-gray-600 italic">Simulation content will be loaded here.  This could be a series of interactive elements, forms, or a more complex application.</p>
+                <p class="text-sm text-gray-500 mt-2">
+                    (This area will be replaced with an interactive simulation in a future development phase.  Think of this as a placeholder
+                    for a dynamic learning experience.)
+                </p>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Target Audience</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Pharmacy Students</li>
+                <li>Pharmacy Technicians</li>
+                <li>Practicing Pharmacists (for continuing education)</li>
+                <li>Pharmacy Educators</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-gray-600 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 SafeScript Simulator. All rights reserved.</p>
+            <p class="text-sm">Developed by M.T. Abankwah</p>
+        </div>
+    </footer>
+
+    <script>
+        //  JavaScript (Interactivity)
+        //  This is where you would add the JavaScript to make the simulations interactive.
+        //  For example, you might use JavaScript to:
+        //  - Load simulation data
+        //  - Handle user input
+        //  - Provide feedback
+        //  - Track student progress
+        //  Since this is a placeholder, I'll add a simple example:
+        const simulationContainer = document.getElementById('simulation-container');
+        if (simulationContainer) {
+            //  You could replace the placeholder content with dynamic content here.
+            //  For example, you could fetch a simulation from a server or load it from a local file.
+
+            //  Here's a very basic example of adding interactivity:
+            const button = document.createElement('button');
+            button.textContent = 'Start Simulation';
+            button.className = 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded';
+            button.addEventListener('click', () => {
+                simulationContainer.innerHTML = '<p class="text-green-600 font-semibold">Simulation started!  (This is a placeholder.)</p>';
+                //  In a real application, you would load the actual simulation here.
+            });
+            simulationContainer.appendChild(button);
+        }
+    </script>
+</body>
+</html>
